@@ -4,7 +4,7 @@
 
 makeCacheMatrix <- function(x = matrix()) {
         inv<-NULL
-        #sets y in the global environment and resets the inv variable 
+        #sets y in the parent environment and resets the inv variable 
         set<-function(y){
                 y<<-x
                 inv<<-NULL
